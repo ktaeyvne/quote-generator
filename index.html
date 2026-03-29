@@ -1,27 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Smart Quote Generator</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Quote Generator Indo</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    #card {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      padding: 25px;
+      border-radius: 20px;
+      width: 320px;
+      margin: 20px auto;
+      transition: 0.3s;
+    }
+
+    #quote {
+      font-size: 18px;
+    }
+
+    #author {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>✨ Quote Generator</h1>
+<div class="container">
+  <h1>✨ Quote Indo Generator</h1>
 
-    <div id="card">
-      <p id="quote">Loading...</p>
-      <span id="author"></span>
-    </div>
-
-    <div class="buttons">
-      <button onclick="getQuote()">🔄 New</button>
-      <button onclick="copyQuote()">📋 Copy</button>
-      <button onclick="tweetQuote()">🐦 Share</button>
-    </div>
+  <!-- 🔥 INI PENTING BANGET -->
+  <div id="card">
+    <p id="quote">Loading...</p>
+    <span id="author"></span>
   </div>
 
-  <script src="script.js"></script>
+  <button onclick="getQuote()">🔄 Generate</button>
+  <button onclick="copyQuote()">📋 Copy</button>
+  <button onclick="tweetQuote()">🐦 Share</button>
+</div>
+
+<!-- 🔥 WAJIB ADA -->
+<script src="script.js" defer></script>
+
 </body>
 </html>
