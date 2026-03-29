@@ -10,7 +10,7 @@ Web app untuk generate quote dari API secara real-time.
 - Glass UI
 
 ## 🌐 Live Demo
-https://username.github.io/quote-generator/
+https://ktaeyvne.github.io/quote-generator/
 
 ## 🛠 Tech Stack
 - HTML
